@@ -1,0 +1,12 @@
+source 'git@git.pixio.com:pixio-libraries/specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'UIImageView_AFNetworking-Blocks', :exclusive => true do
+  pod "UIImageView_AFNetworking-Blocks", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "UIImageView_AFNetworking-Blocks", :path => "../"
+
+  
+end
