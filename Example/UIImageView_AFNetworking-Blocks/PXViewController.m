@@ -54,7 +54,7 @@
 
 - (void)succeedPressed
 {
-    [_imageView1 setImageWithURL:[NSURL URLWithString:@"http://www.pixio.com/img/logo.png"] completion:^(UIImageView *imageView) {
+    [_imageView1 setImageWithURL:[NSURL URLWithString:@"http://www.pixio.com/images/pixio-logo.png"] completion:^(UIImageView *imageView) {
         NSLog(@"loaded");
     }];
 }
