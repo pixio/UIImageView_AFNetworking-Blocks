@@ -39,7 +39,8 @@
  *  @param url        the url for the image
  *  @param completion completion to call when done
  */
-- (void)setImageWithURL:(NSURL *)url completion:(void(^)(UIImageView * imageView))completion;
+- (void)setImageWithURL:(nullable NSURL *)url
+             completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
 
 /**
  *  Calls afnetworking setImageWithURL and calls completion when done.
@@ -48,7 +49,9 @@
  *  @prarm forceUpdate whether the image should be force updated, ignoring the cache
  *  @param completion  completion to call when done
  */
-- (void)setImageWithURL:(NSURL *)url forceUpdate:(BOOL)forceUpdate completion:(void(^)(UIImageView * imageView))completion;
+- (void)setImageWithURL:(nullable NSURL *)url
+            forceUpdate:(BOOL)forceUpdate
+             completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
 
 /**
  *  Calls afnetworking setImageWithURL:placeholderImage and calls completion when done
@@ -57,9 +60,9 @@
  *  @param placeholderImage image to use as placeholder until load finishes
  *  @param completion       completion to call when done
  */
-- (void)setImageWithURL:(NSURL *)url
-       placeholderImage:(UIImage *)placeholderImage
-             completion:(void(^)(UIImageView * imageView))completion;
+- (void)setImageWithURL:(nullable NSURL *)url
+       placeholderImage:(nullable UIImage *)placeholderImage
+             completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
 
 /**
  *  Calls afnetworking setImageWithURL:placeholderImage and calls completion when done
@@ -69,8 +72,8 @@
  *  @prarm forceUpdate      whether the image should be force updated, ignoring the cache
  *  @param completion       completion to call when done
  */
-- (void)setImageWithURL:(NSURL *)url
-       placeholderImage:(UIImage *)placeholderImage
+- (void)setImageWithURL:(nullable NSURL *)url
+       placeholderImage:(nullable UIImage *)placeholderImage
             forceUpdate:(BOOL)forceUpdate
-             completion:(void(^)(UIImageView * imageView))completion;
+             completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
 @end
