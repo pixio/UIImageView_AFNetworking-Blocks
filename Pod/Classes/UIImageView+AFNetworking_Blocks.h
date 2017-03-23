@@ -39,7 +39,7 @@
  *  @param url        the url for the image
  *  @param completion completion to call when done
  */
-- (void)setImageWithURL:(nullable NSURL *)url
+- (void)setImageWithURL:(nonnull NSURL *)url
              completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
 
 /**
@@ -49,7 +49,7 @@
  *  @prarm forceUpdate whether the image should be force updated, ignoring the cache
  *  @param completion  completion to call when done
  */
-- (void)setImageWithURL:(nullable NSURL *)url
+- (void)setImageWithURL:(nonnull NSURL *)url
             forceUpdate:(BOOL)forceUpdate
              completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
 
@@ -60,7 +60,7 @@
  *  @param placeholderImage image to use as placeholder until load finishes
  *  @param completion       completion to call when done
  */
-- (void)setImageWithURL:(nullable NSURL *)url
+- (void)setImageWithURL:(nonnull NSURL *)url
        placeholderImage:(nullable UIImage *)placeholderImage
              completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
 
@@ -72,7 +72,7 @@
  *  @prarm forceUpdate      whether the image should be force updated, ignoring the cache
  *  @param completion       completion to call when done
  */
-- (void)setImageWithURL:(nullable NSURL *)url
+- (void)setImageWithURL:(nonnull NSURL *)url
        placeholderImage:(nullable UIImage *)placeholderImage
             forceUpdate:(BOOL)forceUpdate
              completion:(nullable void(^)(UIImageView * _Nullable imageView))completion;
